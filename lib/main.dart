@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'screens/dashboard_screen.dart';
+import 'navigation/app_routes.dart';
 
 void main() {
   runApp(const FitTrackApp());
@@ -18,7 +18,8 @@ class FitTrackApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF287D68)),
         useMaterial3: true,
       ),
-      home: const DashboardScreen(),
+      initialRoute: AppRoutes.dashboard,
+      routes: AppRoutes.routes,
     );
   }
 }
