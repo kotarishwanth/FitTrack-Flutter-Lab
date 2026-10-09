@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/adaptive_page_padding.dart';
 import '../widgets/dashboard_header.dart';
+import '../widgets/fittrack_navigation_bar.dart';
 import '../widgets/nutrition_summary_card.dart';
 import '../widgets/responsive_metric_grid.dart';
 import '../widgets/section_heading.dart';
@@ -14,12 +15,26 @@ class ResponsiveDashboardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.sizeOf(context).width;
     final wide = screenWidth >= 900;
-    final progressColumn = const Column(
+    const progressColumn = Column(
       children: [WaterProgressCard(consumedMl: 1500), SizedBox(height: 12), NutritionSummaryCard()],
     );
 
     return Scaffold(
-      appBar: AppBar(title: const Text('FitTrack')),
+      appBar: AppBar(
+        title: const Text('FitTrack'),
+        actions: [
+          IconButton(
+            tooltip: 'Profile',
+            onPressed: () => Navigator.pushNamed(context, '/profile'),
+            icon: const Icon(Icons.person_outline),
+          ),
+          IconButton(
+            tooltip: 'Settings',
+            onPressed: () => Navigator.pushNamed(context, '/settings'),
+            icon: const Icon(Icons.settings_outlined),
+          ),
+        ],
+      ),
       body: AdaptivePagePadding(
         child: ListView(
           children: [
@@ -31,7 +46,7 @@ class ResponsiveDashboardScreen extends StatelessWidget {
               Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 const Expanded(child: _WorkoutSection()),
                 const SizedBox(width: 16),
-                Expanded(child: progressColumn),
+                const Expanded(child: progressColumn),
               ])
             else ...[
               progressColumn,
@@ -41,6 +56,7 @@ class ResponsiveDashboardScreen extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: const FitTrackNavigationBar(selectedIndex: 0),
     );
   }
 }
