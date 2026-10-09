@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'screens/dashboard_screen.dart';
+
 void main() {
   runApp(const FitTrackApp());
 }
@@ -16,24 +18,7 @@ class FitTrackApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF287D68)),
         useMaterial3: true,
       ),
-      home: const FitTrackHomePage(),
-    );
-  }
-}
-
-class FitTrackHomePage extends StatelessWidget {
-  const FitTrackHomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('FitTrack')),
-      body: const Center(
-        child: Text(
-          'Your daily fitness, nutrition, and hydration overview.',
-          textAlign: TextAlign.center,
-        ),
-      ),
+      home: const DashboardScreen(),
     );
   }
 }
