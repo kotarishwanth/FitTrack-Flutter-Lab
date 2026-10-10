@@ -38,6 +38,29 @@ flutter run
 
 All displayed fitness and nutrition figures are sample UI data, not health advice.
 
+## Experiment outputs
+
+The following are the observable outputs/results for each experiment. Experiments 2–4 are demonstrated in the running FitTrack Flutter app; Experiment 1 uses Dart examples and learning exercises.
+
+### Experiment 1 — Flutter and Dart fundamentals
+- Flutter project and package configuration are set up.
+- Dart examples demonstrate variables, control flow, functions, collections, classes, null safety, and asynchronous programming.
+- **Expected output:** the examples produce console results or demonstrate the relevant language behavior when run; practice questions are provided in the experiment notes.
+
+### Experiment 2 — Widgets and layouts
+- The FitTrack dashboard displays a greeting/header, metric cards, workout summaries, hydration and nutrition information, and quick-action controls.
+- Reusable widgets are composed into a single dashboard screen using `Row`, `Column`, and `Stack`.
+
+### Experiment 3 — Responsive UI
+- The dashboard adapts its spacing and metric layout to available screen width.
+- The responsive screen demonstrates constraints-based layout with `LayoutBuilder`, screen information with `MediaQuery`, and orientation handling.
+
+### Experiment 4 — Navigation
+- The app opens on the dashboard and provides navigation to Workouts, Nutrition, Profile, and Settings.
+- Selecting a workout can open its detail screen; named routes organize navigation, and push/pop examples demonstrate moving between screens and returning.
+
+> **Evidence note:** These descriptions document the expected app and console results. To include actual visual evidence, run the app on an emulator or device, capture screenshots of the relevant screens, and add them to the repository (for example, under `docs/experiments/screenshots/`) with Markdown image links here.
+
 ## Lab notes
 
 Experiment notes, examples, and checklists are stored under `docs/experiments/`. Each experiment is represented by a series of focused commits so the implementation history is easy to follow.
