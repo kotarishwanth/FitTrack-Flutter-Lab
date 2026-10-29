@@ -1,19 +1,24 @@
 # Experiment 8 — Animations in Flutter
 
 ## Aim
-To add animations to UI elements using Flutter animation features.
+Add animations to UI elements using Flutter's animation widgets.
 
 ## Explanation
-The lab manual demonstrates animated size/color/opacity changes with `AnimatedContainer` and also lists fade and slide animations. A focused example should leave the existing FitTrack navigation and dashboard behavior unchanged.
+The lab manual covers animated property changes and fade/slide effects. `AnimatedContainer` animates size, color and corner radius; `AnimatedOpacity` fades the card; `AnimatedSlide` moves it vertically.
 
-## Program/source links
-- Standalone animation example: `animations_example.dart` (to be added).
+## Source file
+- [Animation example](../../../examples/experiment_8/animations_example.dart)
 
-## Expected output
-Interacting with a button should trigger an animated container change, fade, slide, or related effect as implemented. This describes the expected effect, not a tested result.
+## Run
+From the repository root, run `flutter run -t examples/experiment_8/animations_example.dart`.
 
-## Output screenshot
-Pending: `../screenshots/experiment-8-animations.png`. A still image captures only one visual state; a short screen recording or GIF may document the motion more clearly if permitted by the lab submission.
+## Expected behavior
+- Tap the workout card to animate its size, color and border radius.
+- Use **Fade Out / Fade In** to animate opacity.
+- Use **Slide Out / Slide In** to animate vertical position.
+
+## Verification status
+The AnimatedContainer and fade behavior were demonstrated in DartPad during the walkthrough. The standalone repository example now also includes slide animation, but that additional behavior has not been run or analyzed here. No screenshot is claimed as committed evidence.
 
 ## Result
-The experiment will demonstrate animation effects in a Flutter interface. Implementation and output evidence remain pending.
+The source demonstrates implicit animations for container properties, opacity and position.
