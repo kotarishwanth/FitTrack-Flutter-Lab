@@ -36,10 +36,10 @@ dart run docs/experiments/experiment-1/02-dart-variables.dart
 | 2 | Explore various Flutter widgets; combined layouts using Row, Column and Stack | [Widget example](docs/experiments/experiment-2/03-widget-practice.dart), [reusable widgets](lib/widgets/) |
 | 3 | Responsive UI and media queries in Flutter; implement media queries and breakpoints | [Responsive dashboard](lib/screens/responsive_dashboard_screen.dart), [MediaQuery example](docs/experiments/experiment-3/03-mediaquery-example.dart), [LayoutBuilder example](docs/experiments/experiment-3/04-layoutbuilder-example.dart) |
 | 4 | Navigation in Flutter; implement navigation with named routes | [Route table](lib/navigation/app_routes.dart), [navigation example](docs/experiments/experiment-4/03-navigation-practice.dart) |
-| 5 | Stateful and stateless widgets; state management using setState() and Provider | [Experiment 5 documentation](docs/experiments/experiment-5/README.md) |
-| 6 | Custom widgets and styling in Flutter; themes and custom styles | [Experiment 6 documentation](docs/experiments/experiment-6/README.md) |
-| 7 | Design a form with input fields; form validation and error handling | [Experiment 7 documentation](docs/experiments/experiment-7/README.md) |
-| 8 | Animations in Flutter; animations such as fade and slide | [Experiment 8 documentation](docs/experiments/experiment-8/README.md) |
+| 5 | Stateful and stateless widgets; state management using setState() and Provider | [Experiment 5 documentation](docs/experiments/experiment-5/README.md), [setState example](examples/experiment_5/setstate_main.dart), [Provider example](examples/experiment_5/provider_main.dart) |
+| 6 | Custom widgets and styling in Flutter; themes and custom styles | [Experiment 6 documentation](docs/experiments/experiment-6/README.md), [styling example](examples/experiment_6/custom_styling_example.dart) |
+| 7 | Design a form with input fields; form validation and error handling | [Experiment 7 documentation](docs/experiments/experiment-7/README.md), [form example](examples/experiment_7/form_validation_example.dart) |
+| 8 | Animations in Flutter; animations such as fade and slide | [Experiment 8 documentation](docs/experiments/experiment-8/README.md), [animation example](examples/experiment_8/animations_example.dart) |
 
 ## Experiment 1 — Flutter and Dart setup; simple Dart program
 
