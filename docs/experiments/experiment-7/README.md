@@ -1,21 +1,24 @@
 # Experiment 7 — Forms with Input Fields, Validation and Error Handling
 
 ## Aim
-To design a form with input fields and perform validation and error handling.
+Design a form with input fields and perform validation and error handling.
 
 ## Explanation
-The lab manual lists Name, Email and Password fields with a submit button. It describes validation feedback for required values, valid email format and a password with a minimum length of six characters. Flutter's `Form`, `GlobalKey<FormState>` and `TextFormField` validators can be used to implement these requirements.
+The lab manual specifies Name, Email and Password fields with a submit button. Validation checks required values, email format and a password of at least six characters. Flutter's `Form`, `GlobalKey<FormState>` and `TextFormField` validators implement these requirements.
 
-## Program/source links
-- Standalone form validation example: `form_validation_example.dart` (to be added).
+## Source file
+- [Form validation example](../../../examples/experiment_7/form_validation_example.dart)
 
-## Expected output
-Empty required fields should show required-field errors; invalid email text should show an email validation message; a password shorter than six characters should show a length error. Valid input should reach a submit confirmation. These are required expected behaviors from the manual, not tested outputs.
+## Run
+From the repository root, run `flutter run -t examples/experiment_7/form_validation_example.dart`.
 
-## Output screenshot
-Pending:
-- `../screenshots/experiment-7-form-validation.png` (validation errors visible)
-- Optional: a second real capture showing valid submission.
+## Test cases
+1. Submit an empty form: required-field errors should appear.
+2. Enter an invalid email and a password shorter than six characters: corresponding validation messages should appear.
+3. Enter a name, a valid email (for example, `student@example.com`) and a password of at least six characters: a success SnackBar should appear.
+
+## Verification status
+The form was demonstrated in DartPad during the walkthrough, including an invalid email validation message. The standalone repository source has been added but has not been run or analyzed here. No screenshot is claimed as committed evidence.
 
 ## Result
-The experiment demonstrates form input, field validation and error feedback. Implementation and screenshot evidence remain pending.
+The example implements required-field, email-format and minimum-password-length validation.
