@@ -1,21 +1,24 @@
 # Experiment 6 — Custom Widgets and Styling in Flutter
 
 ## Aim
-To create reusable custom widgets and apply themes and custom styles to UI elements.
+Create reusable custom widgets and apply themes and custom styles to UI elements.
 
 ## Explanation
-A custom widget encapsulates an interface element for reuse. `ThemeData` provides common colors and typography, while individual widget styles can override specific properties. FitTrack already contains reusable widgets and defines app-level theme data; a focused example is still needed to demonstrate the lab-manual styling requirement directly.
+A custom widget encapsulates an interface element for reuse. `ThemeData` supplies shared colors and component styling, while `Theme.of(context)` accesses theme properties. The activity card accepts a title, value and icon so the same component can be reused for different metrics.
 
-## Program/source links
-- [App theme](../../../lib/main.dart)
-- [Reusable metric card](../../../lib/widgets/metric_card.dart)
-- Standalone styling example: `custom_styling_example.dart` (to be added).
+## Source files
+- [Standalone custom styling example](../../../examples/experiment_6/custom_styling_example.dart)
+- [FitTrack app theme](../../../lib/main.dart)
+- [Existing reusable metric card](../../../lib/widgets/metric_card.dart)
+
+## Run
+From the repository root, run `flutter run -t examples/experiment_6/custom_styling_example.dart`.
 
 ## Expected output
-A custom card and button should render with their configured colors, shapes, spacing and text styles. This is expected output and has not yet been tested for a standalone Experiment 6 program.
+The screen displays a heading, three activity cards (Daily Steps, Water Intake and Workout) and a themed button. Pressing **Complete Today** displays a SnackBar.
 
-## Output screenshot
-Pending: `../screenshots/experiment-6-custom-styling.png`.
+## Verification status
+The same general card-and-theme concept was demonstrated in DartPad during the walkthrough. The standalone repository file has been added but has not been run or analyzed here. No screenshot is claimed as committed evidence.
 
 ## Result
-The current FitTrack UI demonstrates reusable widgets and shared theming. A manual-aligned standalone example and its screenshot remain pending.
+The example demonstrates reusable custom widgets, shared theme configuration and a themed Material button.
