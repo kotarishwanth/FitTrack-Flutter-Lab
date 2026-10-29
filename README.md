@@ -272,3 +272,8 @@ FitTrack-Flutter-Lab/
 - No local Flutter commands were run in this session, so analyzer/test success is **not claimed**.
 - No screenshot files were present under `docs/experiments/screenshots/` at inspection time.
 - Experiments 5–8 are documented from the manual, but their separate source examples and real output screenshots are not yet committed.
+
+
+## Screenshot evidence note
+
+The screenshot evidence bundle contains captures of individual examples run in DartPad, not screenshots of the complete FitTrack repository app. Copy the real image files into `docs/experiments/screenshots/` and update the links to their actual filenames. Experiments 1–8 are represented by the screenshot filenames; Experiment 4 may include home and workout-detail screens, Experiment 7 should show validation errors, and Experiment 8 should include visible and faded states. These screenshots do not prove that `flutter analyze` or `flutter test` passed.
